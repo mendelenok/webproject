@@ -9,4 +9,8 @@ public abstract class AbstractUserService implements UserService{
 	public AbstractUserService(UserDao userDao) {
 		this.userDao = userDao;
 	}
+
+	public UserDao getUserDao() {
+		return userDao;
+	}
 }
