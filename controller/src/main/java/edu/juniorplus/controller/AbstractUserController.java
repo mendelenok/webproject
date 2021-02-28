@@ -14,4 +14,8 @@ public abstract class AbstractUserController implements UserController{
 	public abstract String getUser(String data);
 	public abstract String removeUser(String data);
 	public abstract String updateUser(String data);
+
+	public UserService getUserService() {
+		return userService;
+	}
 }
