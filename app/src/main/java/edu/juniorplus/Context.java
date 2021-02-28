@@ -1,20 +1,23 @@
 package edu.juniorplus;
 
+import edu.javajunior.dao.MapUserDao;
 import edu.javajunior.dao.UserDao;
+import edu.juniorplus.controller.BasicUserController;
 import edu.juniorplus.controller.UserController;
+import edu.juniorplus.service.BasicUserService;
 import edu.juniorplus.service.UserService;
 
 public class Context {
 
 	public static UserController userController(){
-		return null;
+		return new BasicUserController(userService());
 	}
 
 	public static UserService userService(){
-		return null;
+		return new BasicUserService(userDao());
 	}
 
 	public static UserDao userDao(){
-		return null;
+		return new MapUserDao();
 	}
 }

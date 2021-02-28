@@ -18,7 +18,8 @@ public class App
                 break;
             }
             try {
-                userController.handleRequest(line);
+                String response = userController.handleRequest(line);
+                System.out.printf("Response: %s%n", response);
             } catch (Exception e) {
                 System.out.println("Request cannot be handled due to " + e.getMessage());
             }
