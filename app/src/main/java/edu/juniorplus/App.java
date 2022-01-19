@@ -1,7 +1,6 @@
 package edu.juniorplus;
 
 import edu.juniorplus.controller.UserController;
-
 import java.util.Scanner;
 
 public class App
